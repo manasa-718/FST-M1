@@ -1,0 +1,10 @@
+def main():
+    try:
+        print(undefined_variable)
+    except NameError as e:
+        print("A NameError occurred:", e)
+
+    print("Program continues execution after handling the error.")
+
+if __name__ == "__main__":
+    main()
