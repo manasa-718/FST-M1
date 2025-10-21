@@ -1,0 +1,20 @@
+def main():
+    fruits = {
+        "apple": 250,
+        "banana": 60,
+        "orange": 160,
+        "mango": 190,
+        "grape": 200,
+        "pineapple": 40.5,
+        "strawberry": 500
+    }
+
+    fruit_name = input("Enter the name of the fruit you are looking for: ").lower()
+
+    if fruit_name in fruits:
+        print(f"Yes, {fruit_name} is available at ${fruits[fruit_name]:.2f} per kg.")
+    else:
+        print(f"Sorry, {fruit_name} is not available.")
+
+if __name__ == "__main__":
+    main()

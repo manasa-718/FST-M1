@@ -1,0 +1,15 @@
+def main():
+    user_input = input("Enter numbers separated by spaces: ")
+
+    try:
+        number_list = [float(num) for num in user_input.split()]
+    except ValueError:
+        print("Please enter only numbers.")
+        return
+
+    total = sum(number_list)
+
+    print(f"The sum of the numbers is: {total}")
+
+if __name__ == "__main__":
+    main()
